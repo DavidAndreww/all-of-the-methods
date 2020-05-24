@@ -24,7 +24,7 @@ function methodButtonGenerator(array) {
     let btn = document.createElement("button");
     btn.addEventListener("click", () => {
       let arrayName = item.name.split(".")[1];
-      let [found] = array.filter(
+      let [found] = selectedArray.filter(
         (item) => item.name.split(".")[1] === arrayName
       );
       console.log(found);

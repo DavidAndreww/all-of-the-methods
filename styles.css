@@ -37,7 +37,6 @@ body {
 .content-display-box {
   width: 90vw;
   height: 250px;
-  border: 1px solid yellow;
   overflow: hidden;
   position: relative;
 }
