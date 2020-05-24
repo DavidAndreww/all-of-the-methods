@@ -11,7 +11,7 @@ body {
   flex-direction: column-reverse;
 }
 .navbar {
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,12 @@ body {
 #methodBtn {
   width: 50px;
   margin: 3px;
+}
+.btn-display-field {
+  display: flex;
+  background: #5da9e9;
+  height: 5vh;
+  overflow-x: scroll;
 }
 .main {
   display: flex;
