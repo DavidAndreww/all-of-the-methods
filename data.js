@@ -1,23 +1,104 @@
-export const arrayMethods = [
-  { name: 'Array.concat()' },
-  { name: 'Array.entries()' },
-  { name: 'Array.every()' },
-  { name: 'Array.fill()' },
-  { name: 'Array.filter()' },
-  { name: 'Array.find()' },
-  { name: 'Array.forEach()' },
-  { name: 'Array.includes()' },
-  { name: 'Array.map()' },
-  { name: 'Array.lastIndexOf()' },
-  { name: 'Array.join()' },
-  { name: 'Array.keys()' },
-  { name: 'Array.reduce()' },
-  { name: 'Array.shift()' },
-  { name: 'Array.unshift()' },
-  { name: 'Array.pop()' },
-  { name: 'Array.push()' },
-  { name: 'Array.splice()' },
-  { name: 'Array.slice()' },
-  { name: 'Array.toString()' },
-]
-
+export const data = {
+  arrayMethods: [
+    {
+      name: "Array.concat()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.entries()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.every()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.fill()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.filter()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.find()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.forEach()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.includes()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.map()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.lastIndexOf()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.join()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.keys()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.reduce()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.shift()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.unshift()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.pop()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.push()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.splice()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.slice()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+    {
+      name: "Array.toString()",
+      description: "blah blah blah",
+      editor: "let pigs.concat() things and stuff",
+    },
+  ]
+};
