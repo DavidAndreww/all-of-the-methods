@@ -1,4 +1,23 @@
-export const strings ={
-  
+export const arrayMethods = [
+  { name: 'Array.concat()' },
+  { name: 'Array.entries()' },
+  { name: 'Array.every()' },
+  { name: 'Array.fill()' },
+  { name: 'Array.filter()' },
+  { name: 'Array.find()' },
+  { name: 'Array.forEach()' },
+  { name: 'Array.includes()' },
+  { name: 'Array.map()' },
+  { name: 'Array.lastIndexOf()' },
+  { name: 'Array.join()' },
+  { name: 'Array.keys()' },
+  { name: 'Array.reduce()' },
+  { name: 'Array.shift()' },
+  { name: 'Array.unshift()' },
+  { name: 'Array.pop()' },
+  { name: 'Array.push()' },
+  { name: 'Array.splice()' },
+  { name: 'Array.slice()' },
+  { name: 'Array.toString()' },
+]
 
-}
