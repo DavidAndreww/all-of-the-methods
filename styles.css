@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* display: grid; */
+  /* grid-template-rows: 15vh auto; */
+  /* height: 100vh;  */
+  display: flex;
+  flex-direction: column-reverse;
+}
+.navbar {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(90, 89, 180, 0.904);
+}
+#methodBtn {
+  width: 50px;
+  margin: 3px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  background-color: #5da9e9;
+}
+.content-display-box {
+  width: 90vw;
+  height: 250px;
+  border: 1px solid yellow;
+  overflow: hidden;
+  position: relative;
+}
+.method-description-box {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.method-description-box h2,
+.method-description-box p {
+  margin-bottom: 5px;
+}
+.method-code-editor {
+  background-color: red;
+  height: 100%;
+  /* background:green; */
+    height: 100%;
+    /* width: 50%; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+}
+.text-area {
+  width: 100%;
+  height: inherit;
+  background-color: rgb(226, 224, 224);
+}
