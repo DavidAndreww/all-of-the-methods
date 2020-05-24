@@ -57,6 +57,8 @@ body {
 }
 .text-area {
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
   height: inherit;
   background-color: rgb(226, 224, 224);
 }
