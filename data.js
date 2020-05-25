@@ -3,7 +3,11 @@ export const data = {
     {
       name: "Array.concat()",
       description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      editor: 
+      `
+      let string1 = "Hello"
+      let string2 = "World"
+      string1.concat(string2);`,
     },
     {
       name: "Array.entries()",
@@ -18,12 +22,14 @@ export const data = {
     {
       name: "Array.fill()",
       description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      editor: "let Array.fill(12)",
     },
     {
       name: "Array.filter()",
       description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      editor: `array.filter(item => {
+        item.length > 5
+      });`,
     },
     {
       name: "Array.find()",

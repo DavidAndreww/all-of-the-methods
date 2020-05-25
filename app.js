@@ -13,8 +13,14 @@ function loadMethodToDom(object) {
   console.log(object.description);
   let h2 = document.querySelector(".method-name-h2");
   let p = document.querySelector(".method-description-p");
+  let textArea = document.querySelector('.text-area')
   h2.innerHTML = object.name;
   p.innerHTML = object.description;
+  textArea.innerHTML = `${object.editor}`
+  function print(object){
+    console.log(object)
+  }
+  print(object.editor)
 }
 
 function methodButtonGenerator(array) {
@@ -30,7 +36,7 @@ function methodButtonGenerator(array) {
       console.log(found);
       loadMethodToDom(found);
     });
-    btn.className = item.name.split(".")[1];
+    btn.className = 'individual-method-btn';
     btn.textContent = item.name.split(".")[1];
     body.appendChild(btn);
   });

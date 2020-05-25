@@ -23,15 +23,20 @@ body {
 }
 .btn-display-field {
   display: flex;
+  align-items: flex-end;
   background: #5da9e9;
-  height: 5vh;
+  height: 10vh;
   overflow-x: scroll;
+}
+.individual-method-btn {
+  background-color: white;
+  margin: 0px 1px;
 }
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 80vh;
   background-color: #5da9e9;
 }
 .content-display-box {
