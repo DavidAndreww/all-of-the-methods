@@ -3,8 +3,7 @@ export const data = {
     {
       name: "Array.concat()",
       description: "blah blah blah",
-      editor: 
-      `
+      editor: `
       let string1 = "Hello"
       let string2 = "World"
       string1.concat(string2);`,

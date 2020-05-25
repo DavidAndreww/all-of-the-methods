@@ -30,7 +30,8 @@ body {
 }
 .individual-method-btn {
   background-color: white;
-  margin: 0px 1px;
+  margin: 0px 2px;
+  width: 145px;
 }
 .main {
   display: flex;
