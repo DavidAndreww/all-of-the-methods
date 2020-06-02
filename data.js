@@ -2,108 +2,139 @@ export const data = {
   arrayMethods: [
     {
       name: "Array.concat()",
-      description: "blah blah blah",
+      description: "Merges two or more arrays.",
+      mutability: 'Immutable',
+      returnType: 'Array',
       editor: `
-      let string1 = "Hello"
-      let string2 = "World"
-      string1.concat(string2);`,
+      const array1 = ['a','b','c'];
+      const array2 = ['d','e','f'];
+      const array3 = array1.concat(array2);
+      console.log(array3);
+      `,
     },
-    {
-      name: "Array.entries()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.every()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.fill()",
-      description: "blah blah blah",
-      editor: "let Array.fill(12)",
-    },
-    {
-      name: "Array.filter()",
-      description: "blah blah blah",
-      editor: `array.filter(item => {
-        item.length > 5
-      });`,
-    },
+    // {
+    //   name: "Array.from()",
+    //   description: "Creates new, shallow copied array from another array-like iterable object.",
+    //   mutability: 'immutable',
+    //   editor: ``,
+    // },
+    // {
+    //   name: "Array.entries()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.every()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.fill()",
+    //   description: "blah blah blah",
+    //   editor: "let Array.fill(12)",
+    // },
+    // {
+    //   name: "Array.filter()",
+    //   description: "blah blah blah",
+    //   editor: `array.filter(item => {
+    //     item.length > 5
+    //   });`,
+    // },
     {
       name: "Array.find()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      description: "Returns value of the first element that satisfies the provided testing function.",
+      mutability: 'n/a',
+      returnType: 'variant',
+      editor: `
+      const array1 = [5, 12, 8, 75, 100];
+      const found = array1.find(num => num > 10);
+      console.log(found)
+      `,
     },
-    {
-      name: "Array.forEach()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.includes()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.map()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.lastIndexOf()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.join()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.keys()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.reduce()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.shift()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.unshift()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
+    // {
+    //   name: "Array.forEach()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.includes()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.map()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.lastIndexOf()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.join()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.keys()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.reduce()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.shift()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.unshift()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
     {
       name: "Array.pop()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      description: "Removes the last element from an array and returns that element",
+      mutability: 'Mutable',
+      returnType: 'removed element',
+      editor: `
+      const fruits = ['apple', 'banana', 'grape', 'strawberry', 'kiwi']
+      console.log(fruits.pop())
+      `,
     },
     {
       name: "Array.push()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      description: "Adds one or more elements to the end of an array, returns new length of the array.",
+      mutability: 'Mutable',
+      returnType: 'Integer',
+      editor: `
+      const fruits = ['apple', 'banana', 'orange', 'mango']
+      console.log(fruits.push('watermelon'))
+      `,
     },
-    {
-      name: "Array.splice()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
-    {
-      name: "Array.slice()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
-    },
+    // {
+    //   name: "Array.splice()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
+    // {
+    //   name: "Array.slice()",
+    //   description: "blah blah blah",
+    //   editor: "let pigs.concat() things and stuff",
+    // },
     {
       name: "Array.toString()",
-      description: "blah blah blah",
-      editor: "let pigs.concat() things and stuff",
+      description: "Converts an array and its elements into a string.",
+      mutability: 'Immutable',
+      returnType: 'String',
+      editor: `
+      const words = ['the', 'cow', 'jumped', 'over', 'the', 'moon'];
+      console.log(words.toString());
+      `,
     },
   ]
 };
