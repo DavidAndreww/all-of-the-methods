@@ -1,8 +1,9 @@
 import { data } from "./data.js";
 
-let methodBtn = document.querySelectorAll("#method-btn");
+let methodLoaderButton = document.querySelectorAll("#method-btn");
 
-methodBtn.forEach((button) =>
+// adds event listener 
+methodLoaderButton.forEach((button) =>
   button.addEventListener("click", () => {
     let array = data[button.name];
     methodButtonGenerator(array);
@@ -10,17 +11,14 @@ methodBtn.forEach((button) =>
 );
 
 function loadMethodToDom(object) {
-  console.log(object.description);
+  
   let h2 = document.querySelector(".method-name-h2");
   let p = document.querySelector(".method-description-p");
   let textArea = document.querySelector(".text-area");
   h2.innerHTML = object.name;
   p.innerHTML = object.description;
   textArea.innerHTML = `${object.editor}`;
-  function print(object) {
-    console.log(object);
-  }
-  print(object.editor);
+  
 }
 
 function methodButtonGenerator(array) {
