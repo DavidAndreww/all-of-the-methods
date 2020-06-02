@@ -86,16 +86,28 @@ export const data = {
     //   description: "blah blah blah",
     //   editor: "let pigs.concat() things and stuff",
     // },
-    // {
-    //   name: "Array.shift()",
-    //   description: "blah blah blah",
-    //   editor: "let pigs.concat() things and stuff",
-    // },
-    // {
-    //   name: "Array.unshift()",
-    //   description: "blah blah blah",
-    //   editor: "let pigs.concat() things and stuff",
-    // },
+    {
+      name: "Array.shift()",
+      description: "Removes first element from an array and returns the removed element",
+      mutability: 'Mutable',
+      returnType: 'removed element', 
+      editor: `
+      const sports = ['soccer', 'football', 'hockey', 'tennis'];
+      const firstElement = sports.shift() 
+      console.log(firstElement);
+      `,
+    },
+    {
+      name: "Array.unshift()",
+      description: "Adds one or more elements to the beginning of an array and retuns new length of the array.",
+      mutability: 'Mutable',
+      returnType: 'Integer',
+      editor: `
+      const sports = ['soccer', 'hockey', 'football', 'baseball']
+      console.log(sports.unshift('tennis', 'golf'))
+      console.log(sports)
+      `,
+    },
     {
       name: "Array.pop()",
       description: "Removes the last element from an array and returns that element",
