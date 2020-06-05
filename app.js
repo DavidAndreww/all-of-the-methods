@@ -7,13 +7,17 @@ import { data } from "./data.js";
 // for each button, create another on click event listener
 // on click must take a unique button and find corresponding object in the array
 // load buttons to the page to be displayed
+// clear current list of buttons from screen when new button is clicked
 
 let primaryBtn = document.querySelectorAll("#method-btn");
+
 primaryBtn.forEach((button) => {
   const arrayName = button.name;
-  let arrayOfData = data[arrayName];
-  button.addEventListener("click", () => secondaryBtnGenerator(arrayOfData));
+  let methodsToLoad = data[arrayName];
+  button.addEventListener("click", () => secondaryBtnGenerator(methodsToLoad));
 });
+
+
 
 function secondaryBtnGenerator(list) {
   const array = list;
