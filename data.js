@@ -172,4 +172,5 @@ export const data = {
   objectMethods: [],
   math: [],
   timeAndDate: [],
+  readFile: []
 };

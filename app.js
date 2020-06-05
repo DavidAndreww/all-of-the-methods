@@ -21,12 +21,14 @@ function secondaryBtnGenerator(list) {
   array.forEach((method) => {
     const btn = document.createElement("button");
     btn.name = method.name;
+    btn.textContent = method.name
     btn.addEventListener("click", () => loadToDom(method.name));
     secondaryButtons.push(btn);
   });
   console.log('newButtons',secondaryButtons);
   const displayDiv = document.querySelector(".btn-display-field");
   secondaryButtons.forEach(button=>{
+    console.log(button)
     displayDiv.appendChild(button)
   })
 }
