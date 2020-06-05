@@ -1,21 +1,41 @@
 import { data } from "./data.js";
 
-let generateButtonListBtn = document.querySelectorAll("#method-btn");
-generateButtonListBtn.forEach(button=>{
+// identify each hard coded button from the HTML document
+// add event listener to each button that listens for a click
+// on listener click, identify that button and retrieve data from corresponding array
+// create a unique button for each object in that array of data
+// for each button, create another on click event listener
+// on click must take a unique button and find corresponding object in the array
+// load buttons to the page to be displayed
+
+let primaryBtn = document.querySelectorAll("#method-btn");
+primaryBtn.forEach((button) => {
   const arrayName = button.name;
   let arrayOfData = data[arrayName];
-  button.addEventListener('click', () => loader(arrayOfData))
-  
-})
+  button.addEventListener("click", () => secondaryBtnGenerator(arrayOfData));
+});
 
-
-function loader(list){
-  console.log(list)
+function secondaryBtnGenerator(list) {
+  const array = list;
+  let secondaryButtons = [];
+  array.forEach((method) => {
+    const btn = document.createElement("button");
+    btn.name = method.name;
+    btn.addEventListener("click", () => loadToDom(method.name));
+    secondaryButtons.push(btn);
+  });
+  console.log('newButtons',secondaryButtons);
+  const displayDiv = document.querySelector(".btn-display-field");
+  secondaryButtons.forEach(button=>{
+    displayDiv.appendChild(button)
+  })
 }
 
+function loadToDom(obj){
+  console.log(obj)
+}
 
-
-// // adds event listener 
+// // adds event listener
 // methodLoaderButton.forEach((button) =>
 //   button.addEventListener("click", () => {
 //     let array = data[button.name];
@@ -24,14 +44,14 @@ function loader(list){
 // );
 
 // function loadMethodToDom(object) {
-  
+
 //   let h2 = document.querySelector(".method-name-h2");
 //   let p = document.querySelector(".method-description-p");
 //   let textArea = document.querySelector(".text-area");
 //   h2.innerHTML = object.name;
 //   p.innerHTML = object.description;
 //   textArea.innerHTML = `${object.editor}`;
-  
+
 // }
 
 // function methodButtonGenerator(array) {
