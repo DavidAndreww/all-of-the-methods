@@ -148,5 +148,28 @@ export const data = {
       console.log(words.toString());
       `,
     },
-  ]
+  ],
+  stringMethods:[
+    {
+        name: "String.toLowerCase()",
+        description: "turns first letter of string to lower case",
+        mutability: 'mutable',
+        editor: ``,
+      },
+    {
+        name: "String.toUpperCase()",
+        description: "turns first letter of string to upper case",
+        mutability: 'mutable',
+        editor: ``,
+      },
+    {
+        name: "String.concat()",
+        description: "concats strings, duh",
+        mutability: 'mutable',
+        editor: ``,
+      },
+  ],
+  objectMethods: [],
+  math: [],
+  timeAndDate: [],
 };
