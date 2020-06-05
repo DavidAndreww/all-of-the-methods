@@ -9,37 +9,52 @@ import { data } from "./data.js";
 // load buttons to the page to be displayed
 // clear current list of buttons from screen when new button is clicked
 
-let primaryBtn = document.querySelectorAll("#method-btn");
+const primarybuttons = document.querySelectorAll("#method-btn");
 
-primaryBtn.forEach((button) => {
+primarybuttons.forEach((button) => {
   const arrayName = button.name;
   let methodsToLoad = data[arrayName];
-  button.addEventListener("click", () => secondaryBtnGenerator(methodsToLoad));
+  button.addEventListener("click", () => {
+    secondaryBtnGenerator(methodsToLoad)
+    addEventToSecondaryButtons()
+  });
 });
-
-
 
 function secondaryBtnGenerator(list) {
   const array = list;
-  let secondaryButtons = [];
-  array.forEach((method) => {
+  // let secondaryButtons = [];
+  const displayDiv = document.querySelector(".btn-display-field");
+  // adds name, class, and textContent to each button 
+    array.forEach((method) => {
     const btn = document.createElement("button");
     btn.name = method.name;
     btn.textContent = method.name
-    btn.addEventListener("click", () => loadToDom(method.name));
-    secondaryButtons.push(btn);
+    btn.className = 'individual-method-btn'
+    displayDiv.appendChild(btn)
   });
-  console.log('newButtons',secondaryButtons);
-  const displayDiv = document.querySelector(".btn-display-field");
-  secondaryButtons.forEach(button=>{
-    console.log(button)
-    displayDiv.appendChild(button)
-  })
+
 }
+
+function addEventToSecondaryButtons(){
+  const secondaryButtons = document.querySelectorAll('.individual-method-btn')
+  // console.log(secondaryButtons)
+  secondaryButtons.forEach(button => {
+    button.addEventListener('click', () => loadToDom(button.name)) 
+  })
+  
+}
+
+
 
 function loadToDom(obj){
   console.log(obj)
 }
+
+// let h2 = document.querySelector('.method-name-h2');
+// let p = document.querySelector('.method-description-p');
+// let textArea = document.querySelector('.text-area')
+
+
 
 // // adds event listener
 // methodLoaderButton.forEach((button) =>
