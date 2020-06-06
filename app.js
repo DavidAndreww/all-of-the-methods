@@ -11,12 +11,14 @@ import { data } from "./data.js";
 
 const primarybuttons = document.querySelectorAll("#method-btn");
 
+// add click event listener to each primary button. Event will generate secondary buttons, as well as add event listeners to those buttons
 primarybuttons.forEach((button) => {
   const arrayName = button.name;
   let methodsToLoad = data[arrayName];
   button.addEventListener("click", () => {
+    const displayDiv = document.querySelector(".btn-display-field");
+    displayDiv.innerHTML = '';
     secondaryBtnGenerator(methodsToLoad);
-    addEventToSecondaryButtons(methodsToLoad);
   });
 });
 
@@ -24,31 +26,23 @@ function secondaryBtnGenerator(list) {
   const array = list;
   // let secondaryButtons = [];
   const displayDiv = document.querySelector(".btn-display-field");
-  // adds name, class, and textContent to each button
+  // adds name, class, textContent and eventListener to each button
   array.forEach((method) => {
     const btn = document.createElement("button");
     btn.name = method.name;
-    btn.textContent = method.name;
+    btn.textContent = method.name.split('.')[1];
     btn.className = "individual-method-btn";
+    btn.addEventListener('click',() => loadMethodToDOM(method))
     displayDiv.appendChild(btn);
   });
 }
 
-function addEventToSecondaryButtons(methods) {
-  const secondaryButtons = document.querySelectorAll(".individual-method-btn");
-  secondaryButtons.forEach((button) => {
-    let found = methods.find((method) => method.name === button.name);
-    button.addEventListener("click", () => loadToDom(found));
-  });
-}
-
-function loadToDom(obj) {
-  console.log(obj);
+function loadMethodToDOM(obj) {
   let h2 = document.querySelector('.method-name-h2');
   let p = document.querySelector('.method-description-p');
-  let textArea = document.querySelector('.text-area')
+  let textArea = document.querySelector('.text-area');
   h2.innerHTML = obj.name;
   p.innerHTML = obj.description;
-  textArea.innerHTML = `${obj.editor}`;
+  textArea.innerHTML = obj.editor;
 }
 
