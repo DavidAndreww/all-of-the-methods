@@ -38,6 +38,6 @@ function renderMethodToDOM(obj) {
   let textArea = document.querySelector('.text-area');
   h2.innerHTML = obj.name;
   p.innerHTML = obj.description;
-  textArea.innerHTML = obj.editor;
+  textArea.value = obj.editor;
 }
 
