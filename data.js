@@ -12,22 +12,32 @@ export const data = {
       console.log(array3);
       `,
     },
-    // {
-    //   name: "Array.from()",
-    //   description: "Creates new, shallow copied array from another array-like iterable object.",
-    //   mutability: 'immutable',
-    //   editor: ``,
-    // },
+    {
+      name: "Array.from()",
+      description: "Creates new, shallow copied array from another array-like iterable object.",
+      mutability: 'n\a',
+      returnType: 'Array',
+      editor: `
+      let newArr = Array.from('hello')
+      console.log(newArr)
+      `,
+    },
     // {
     //   name: "Array.entries()",
     //   description: "blah blah blah",
     //   editor: "let pigs.concat() things and stuff",
     // },
-    // {
-    //   name: "Array.every()",
-    //   description: "blah blah blah",
-    //   editor: "let pigs.concat() things and stuff",
-    // },
+    {
+      name: "Array.every()",
+      description: "Tests whether all elements in an array pass test implemented by provided function. Returns boolean value.",
+      mutability: 'n/a',
+      returnType: 'Boolean',
+      editor: `
+      const isNumber = (value) => typeof value === "number";
+      const array = [1,2,3,4,5,'hello']
+      console.log(array.every(isNumber))
+      `,
+    },
     // {
     //   name: "Array.fill()",
     //   description: "blah blah blah",
@@ -170,7 +180,7 @@ export const data = {
       },
   ],
   objectMethods: [],
-  math: [],
-  timeAndDate: [],
-  readFile: []
+  mathMethods: [],
+  dateMethods: [],
+  numberMethods: [],
 };
