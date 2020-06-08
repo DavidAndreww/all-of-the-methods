@@ -37,52 +37,46 @@ body {
   /*keyframe animation will go here*/
   animation-name: buttonLoad;
   animation-fill-mode: forwards;
-  animation-duration: 0.15s;
+  animation-duration: 0.30s;
   animation-timing-function: ease-in-out;
   position: relative;
-  bottom: 40px;
+  bottom: 45px;
 }
-.individual-method-btn:nth-child(1){
-  animation-delay: .00s;
+.individual-method-btn:nth-child(1) {
+  animation-delay: 0s;
 }
-.individual-method-btn:nth-child(2){
-  animation-delay: .05s;
+.individual-method-btn:nth-child(2) {
+  animation-delay: 0.05s;
 }
-.individual-method-btn:nth-child(3){
-  animation-delay: .1s;
+.individual-method-btn:nth-child(3) {
+  animation-delay: 0.1s;
 }
-.individual-method-btn:nth-child(4){
-  animation-delay: .15s;
+.individual-method-btn:nth-child(4) {
+  animation-delay: 0.15s;
 }
-.individual-method-btn:nth-child(5){
-  animation-delay: .2s;
+.individual-method-btn:nth-child(5) {
+  animation-delay: 0.2s;
 }
-.individual-method-btn:nth-child(6){
-  animation-delay: .25s;
+.individual-method-btn:nth-child(6) {
+  animation-delay: 0.25s;
 }
-.individual-method-btn:nth-child(7){
-  animation-delay: .3s;
+.individual-method-btn:nth-child(7) {
+  animation-delay: 0.3s;
 }
-.individual-method-btn:nth-child(8){
-  animation-delay: .35s;
+.individual-method-btn:nth-child(8) {
+  animation-delay: 0.35s;
 }
-.individual-method-btn:nth-child(9){
-  animation-delay: .40s;
+.individual-method-btn:nth-child(9) {
+  animation-delay: 0.4s;
 }
 @keyframes buttonLoad {
   0% {
-    opacity: 0;
-    bottom: 40px;
+    bottom: 45px;
   }
-  60% {
-    opacity: 1;
+  75% {
     bottom: -15px;
   }
-  85%{
-    bottom: -5px;
-  }
   100% {
-    opacity: 1;
     bottom: 0px;
   }
 }

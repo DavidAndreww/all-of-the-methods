@@ -21,11 +21,12 @@ primarybuttons.forEach((button) => {
 function secondaryBtnGenerator(array) {
   const arr = array;
   const secondaryBtnDisplayDiv = document.querySelector(".btn-display-field");
+  let n = 1
   arr.forEach((method) => {
     const btn = document.createElement("button");
     btn.name = method.name;
     btn.textContent = method.name.split('.')[1];
-    btn.className = "individual-method-btn";
+    btn.className = `individual-method-btn`;
     btn.addEventListener('click',() => renderMethodToDOM(method))
     secondaryBtnDisplayDiv.appendChild(btn);
   });
