@@ -18,9 +18,9 @@ body {
   justify-content: center;
   background-color: rgba(90, 89, 180, 0.904);
 }
-#methodBtn {
+.primary-btn {
   width: 50px;
-  margin: 3px;
+  margin: 2px;
 }
 .btn-display-field {
   display: flex;

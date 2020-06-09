@@ -1,6 +1,6 @@
 import { data } from "./data.js";
 
-const primarybuttons = document.querySelectorAll("#method-btn");
+const primarybuttons = document.querySelectorAll(".primary-btn");
 
 // add onClick event listener to each primary button, that calls secondaryBtnGenerator()
 primarybuttons.forEach((button) => {
