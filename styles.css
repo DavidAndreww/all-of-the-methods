@@ -31,8 +31,12 @@ body {
   overflow-x: scroll;
 }
 .individual-method-btn {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin: 0px 2px;
+  padding: 2px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px rgb(68, 65, 60);
   width: 145px;
   /*keyframe animation will go here*/
   animation-name: buttonLoad;
@@ -41,6 +45,11 @@ body {
   animation-timing-function: ease-in-out;
   position: relative;
   bottom: 45px;
+}
+.individual-method-btn:focus {
+background-color: rgb(192, 178, 178);
+outline: none;
+transform: scale(1.05);
 }
 .individual-method-btn:nth-child(1) {
   animation-delay: 0s;
