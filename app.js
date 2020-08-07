@@ -50,11 +50,13 @@ function renderMethodToDOM(obj) {
   editor.setValue(obj.editor) //codemirror method to set value of textarea
 }
 
+const codeDisplayField = document.querySelector('#code-execution-field')
 const submitBtn = document.querySelector('#submit')
 submitBtn.addEventListener('click',function(){
   let code = editor.getValue()
-  // console.log(value)
-  eval(code)
+  console.log(code)
+  let J = new Function(code)
+  console.log(J())
+  codeDisplayField.innerHTML = J()
     
 })
-

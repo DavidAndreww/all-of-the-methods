@@ -123,3 +123,9 @@ transform: scale(1.05);
   height: inherit;
   background-color: rgb(226, 224, 224);
 }
+
+#code-execution-field{
+  width: 100px;
+  height: 50px;
+  background: rgb(162, 216, 162);
+}
