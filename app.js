@@ -3,6 +3,7 @@ let mirrorArea = document.querySelector('.text-area')
 let editor = CodeMirror.fromTextArea(mirrorArea, {
   lineNumbers: true,
   mode: "javascript",
+  theme: "duotone-light"
 })
 console.log(editor)
 let textField = document.getElementsByClassName('CodeMirror-scroll')

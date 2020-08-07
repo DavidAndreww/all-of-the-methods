@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: cadetblue;
+  background-color: #063289;
   z-index: 1;
 }
 .primary-btn {
@@ -106,10 +106,11 @@ transform: scale(1.05);
   position: relative;
 }
 .method-description-box {
-  background-color: cadetblue;
+  background-color: #063289;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #efefef
 }
 .method-description-box h2,
 .method-description-box p {
