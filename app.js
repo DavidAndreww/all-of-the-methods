@@ -6,17 +6,6 @@ let editor = CodeMirror.fromTextArea(mirrorArea, {
   theme: "duotone-light"
 })
 
-editor.on('change', function(cmirror){
- let value = editor.getValue()
- console.log(value)
-})
-
-console.log(editor)
-console.log(mirrorArea.value)
-let textField = document.getElementsByClassName('CodeMirror-scroll')
-console.log(textField)
-
-
 const primarybuttons = document.querySelectorAll(".primary-btn");
 // let mirror = document.querySelector('.method-code-editor')
 
@@ -60,4 +49,12 @@ function renderMethodToDOM(obj) {
   p.innerHTML = obj.description;
   editor.setValue(obj.editor) //codemirror method to set value of textarea
 }
+
+const submitBtn = document.querySelector('#submit')
+submitBtn.addEventListener('click',function(){
+  let code = editor.getValue()
+  // console.log(value)
+  eval(code)
+    
+})
 
