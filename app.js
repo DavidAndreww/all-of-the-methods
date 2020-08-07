@@ -10,6 +10,7 @@ editor.on('change', function(cmirror){
  let value = editor.getValue()
  console.log(value)
 })
+
 console.log(editor)
 console.log(mirrorArea.value)
 let textField = document.getElementsByClassName('CodeMirror-scroll')
@@ -57,6 +58,6 @@ function renderMethodToDOM(obj) {
   let textArea = document.querySelector('.text-area');
   h2.innerHTML = obj.name;
   p.innerHTML = obj.description;
-  textArea.value = obj.editor;
+  editor.setValue(obj.editor) //codemirror method to set value of textarea
 }
 
