@@ -5,7 +5,13 @@ let editor = CodeMirror.fromTextArea(mirrorArea, {
   mode: "javascript",
   theme: "duotone-light"
 })
+
+editor.on('change', function(cmirror){
+ let value = editor.getValue()
+ console.log(value)
+})
 console.log(editor)
+console.log(mirrorArea.value)
 let textField = document.getElementsByClassName('CodeMirror-scroll')
 console.log(textField)
 
