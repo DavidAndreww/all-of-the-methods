@@ -1,9 +1,13 @@
 import { data } from "./data.js";
 let mirrorArea = document.querySelector('.text-area')
 let editor = CodeMirror.fromTextArea(mirrorArea, {
-  lineNumbers: true
+  lineNumbers: true,
+  mode: "javascript",
 })
-mirrorArea.append(editor)
+console.log(editor)
+let textField = document.getElementsByClassName('CodeMirror-scroll')
+console.log(textField)
+
 
 const primarybuttons = document.querySelectorAll(".primary-btn");
 // let mirror = document.querySelector('.method-code-editor')
