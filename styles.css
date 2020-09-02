@@ -5,11 +5,11 @@
 }
 body {
   /* display: grid; 
-   grid-template-rows: 15vh auto; 
-  height: 100vh;  */
+   grid-template-rows: 15vh auto; */
   display: flex;
   /* flip this for mobile view*/
   flex-direction: column;
+  justify-content: center;
 }
 .navbar {
   height: 10vh;
@@ -23,10 +23,11 @@ body {
   width: 50px;
   margin: 2px;
 }
+/*edit this to proplerly align buttons*/
 .btn-display-field {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background: #5da9e9;
   height: 20vh;
 }
