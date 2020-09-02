@@ -22,11 +22,11 @@ export const data = {
       console.log(newArr)
       `,
     },
-    // {
-    //   name: "Array.entries( )",
-    //   description: "blah blah blah",
-    //   editor: "let pigs.concat( ) things and stuff",
-    // },
+    {
+      name: "Array.entries( )",
+      description: "blah blah blah",
+      editor: "let pigs.concat( ) things and stuff",
+    },
     {
       name: "Array.every( )",
       description: "Tests whether all elements in an array pass test implemented by provided function. Returns boolean value.",
@@ -38,18 +38,18 @@ export const data = {
       console.log(array.every(isNumber))
       `,
     },
-    // {
-    //   name: "Array.fill( )",
-    //   description: "blah blah blah",
-    //   editor: "let Array.fill(12)",
-    // },
-    // {
-    //   name: "Array.filter( )",
-    //   description: "blah blah blah",
-    //   editor: `array.filter(item => {
-    //     item.length > 5
-    //   });`,
-    // },
+    {
+      name: "Array.fill( )",
+      description: "blah blah blah",
+      editor: "let Array.fill(12)",
+    },
+    {
+      name: "Array.filter( )",
+      description: "blah blah blah",
+      editor: `array.filter(item => {
+        item.length > 5
+      });`,
+    },
     {
       name: "Array.find( )",
       description: "Returns value of the first element that satisfies the provided testing function.",

@@ -28,8 +28,10 @@ body {
   align-items: center;
   justify-content: center;
   background: #5da9e9;
-  height: 10vh;
-  /* overflow-x: scroll; */
+  height: 20vh;
+}
+.more-than-9 {
+  overflow-x: scroll;
 }
 .notification-div {
   animation-name: buttonLoad;
@@ -47,7 +49,8 @@ body {
   border-radius: 15px;
   box-shadow: 1px 1px 1px rgb(68, 65, 60);
   width: 145px;
-  /* z-index: -1; */
+  min-width: 145px;
+  
   /*keyframe animation will go here*/
   animation-name: buttonLoad;
   animation-fill-mode: forwards;
@@ -87,6 +90,24 @@ transform: scale(1.05);
 }
 .individual-method-btn:nth-child(9) {
   animation-delay: 0.4s;
+}
+.individual-method-btn:nth-child(10) {
+  animation-delay: 0.45s;
+}
+.individual-method-btn:nth-child(11) {
+  animation-delay: 0.50s;
+}
+.individual-method-btn:nth-child(12) {
+  animation-delay: 0.55s;
+}
+.individual-method-btn:nth-child(13) {
+  animation-delay: 0.60s;
+}
+.individual-method-btn:nth-child(14) {
+  animation-delay: 0.65s;
+}
+.individual-method-btn:nth-child(15) {
+  animation-delay: 0.70s;
 }
 @keyframes buttonLoad {
   0% {
