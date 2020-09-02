@@ -31,6 +31,14 @@ body {
   height: 10vh;
   /* overflow-x: scroll; */
 }
+.notification-div {
+  animation-name: buttonLoad;
+  animation-fill-mode: forwards;
+  animation-duration: 0.30s;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  bottom: 45px;
+}
 .individual-method-btn {
   background-color: rgb(255, 255, 255);
   margin: 0px 2px;
