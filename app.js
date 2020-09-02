@@ -53,10 +53,14 @@ function renderMethodToDOM(obj) {
 const codeDisplayField = document.querySelector('#code-execution-field')
 const submitBtn = document.querySelector('#submit')
 submitBtn.addEventListener('click',function(){
-  let code = editor.getValue()
-  console.log(code)
-  let J = new Function(code)
-  console.log(J())
+  let codeToExecute = editor.getValue()
+  console.log(codeToExecute)
+
+  //TODO create functionality to run code within mirror and provide console.log to user
+  let J = new Function(codeToExecute)
+  console.log('J function', J)
+  // let console = editor.lineCount()-1;
+  // console.log(editor.getLine(console))
   codeDisplayField.innerHTML = J()
     
 })

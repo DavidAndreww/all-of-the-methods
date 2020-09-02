@@ -1,0 +1,2 @@
+// codeMirror object methods
+https://codemirror.net/doc/manual.html#api
