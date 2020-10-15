@@ -296,20 +296,35 @@ export const data = {
   stringMethods: [
     {
       name: 'String.toLowerCase( )',
-      description: 'turns first letter of string to lower case',
-      mutability: 'mutable',
-      editor: ''
+      description: 'Converts all upper-case characters in a string to lower-case.',
+      mutability: 'Immutable',
+      returnType: 'String',
+      editor: `
+      const bedtimeStory = 'THE COW JUMPED OVER THE MOON';
+      const quietStory = bedtimeStory.toLowerCase();
+      console.log(quietStory);
+
+      // Output: 'the cow jumped over the moon'
+      `
     },
     {
       name: 'String.toUpperCase( )',
-      description: 'turns first letter of string to upper case',
-      mutability: 'mutable',
-      editor: ''
+      description: 'Converts all lower-case characters in a string to upper-case.',
+      mutability: 'Immutable',
+      returnType: 'String',
+      editor: `
+      const whisper = 'The British are coming!';
+      const yell = whisper.toUpperCase();
+      console.log(yell)
+
+      // Output: 'THE BRITISH ARE COMING!'
+      `
     },
     {
       name: 'String.concat( )',
       description: 'concats strings, duh',
       mutability: 'mutable',
+      returnType: '',
       editor: ''
     }
   ],
