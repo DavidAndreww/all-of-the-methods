@@ -7,7 +7,6 @@ const editor = CodeMirror.fromTextArea(mirrorArea, {
 })
 
 const primarybuttons = document.querySelectorAll('.primary-btn')
-// let mirror = document.querySelector('.method-code-editor')
 
 // add onClick event listener to each primary button, that calls secondaryBtnGenerator()
 primarybuttons.forEach((button) => {
