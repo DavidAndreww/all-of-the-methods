@@ -54,9 +54,12 @@ function secondaryBtnGenerator (array) {
 // takes single object as parameter. Renders appropriate data to the DOM
 function renderMethodToDOM (obj) {
   const h2 = document.querySelector('.method-name-h2')
+  const mutability = document.querySelector('.mutability')
+  const returnValue = document.querySelector('.return-value')
   const p = document.querySelector('.method-description-p')
-  const textArea = document.querySelector('.text-area')
   h2.innerHTML = obj.name
+  mutability.innerHTML = obj.mutability
+  returnValue.innerHTML = obj.returnType
   p.innerHTML = obj.description
   editor.setValue(obj.editor) // codemirror method to set value of textarea
 }
