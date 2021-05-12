@@ -18,6 +18,6 @@
   "type": "module",
   "homepage": "https://github.com/DavidAndreww/all-of-the-methods#readme",
   "dependencies": {
-    "codemirror": "^5.56.0"
+    "codemirror": "^5.58.2"
   }
 }
